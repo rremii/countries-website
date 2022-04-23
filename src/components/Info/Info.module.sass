@@ -1,0 +1,64 @@
+@import "src/sass/variables"
+.light
+  color: rgb(43, 57, 69) !important
+
+  article
+    div
+      border: 0.1rem solid rgb(43, 57, 69)
+      background-color: white !important
+
+.Info
+  width: 100%
+  text-align: center
+  color: white
+
+  article
+    padding-left: 5%
+    margin: 3rem 0
+    display: flex
+
+    div
+      cursor: pointer
+      font-size: 2rem
+      padding: 1rem 5rem
+      border-radius: 1rem
+      background-color: rgb(43, 57, 69)
+
+  h1
+    font-size: 4rem
+
+  section
+    padding-left: 5%
+    display: flex
+    justify-content: space-between
+    @include media-break(650px, max)
+      padding: 0
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+
+    img
+      width: 40%
+      @include media-break(650px, max)
+        width: 80%
+
+    div
+      flex-grow: 1
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      flex-wrap: wrap
+      gap: 0
+      @include media-break(650px, max)
+        width: 100%
+        padding: 0 10%
+        justify-content: space-between
+
+      h2
+        height: min-content
+        width: 40%
+        @include media-break(650px, max)
+          margin: 1rem 0
+
+        span
+          font-weight: 400

@@ -1,0 +1,28 @@
+@import "src/sass/variables"
+.light
+  background-color: white
+  color: rgb(43, 57, 69)
+
+header
+  width: 100%
+  height: 10vh
+  background-color: rgb(43, 57, 69)
+  color: white
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0 5%
+  font-size: calc(1.5rem + 0.7vw)
+  font-weight: 700
+  box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.37)
+  @include media-break(450px, max)
+    flex-direction: column
+    justify-content: space-evenly
+
+  div
+    cursor: pointer
+    display: flex
+    align-items: center
+
+    svg
+      margin: 0 0.5rem

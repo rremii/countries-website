@@ -1,0 +1,147 @@
+@import "src/sass/variables"
+.Light
+  article
+    background-color: white
+    color: rgb(43, 57, 69) !important
+    border: 0.1rem solid rgb(43, 57, 69)
+
+    div
+      border: 0.1rem solid rgb(43, 57, 69)
+
+      background-color: white
+
+  section
+    background-color: white
+    border: 0.1rem solid rgb(43, 57, 69)
+
+    div
+      background-color: white
+
+    input
+      color: rgb(43, 57, 69) !important
+
+    span
+      color: rgb(43, 57, 69) !important
+
+    ::placeholder
+      color: rgb(43, 57, 69) !important
+
+    :-ms-input-placeholder
+      color: rgb(43, 57, 69) !important
+
+    ::-ms-input-placeholder
+      color: rgb(43, 57, 69) !important
+
+nav
+  width: 100%
+  height: 17vh
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 0 3%
+  @include media-break(768px, max)
+    flex-direction: column
+    justify-content: space-evenly
+    align-items: flex-start
+
+  section
+    width: 38rem
+    max-width: 90%
+    height: 5.5rem
+    background-color: rgb(43, 57, 69)
+    border-radius: 0.5rem
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: relative
+
+    svg
+      font-size: 5.5rem
+      width: 0.4em
+      height: 0.4em
+      margin: 0 5%
+
+    input
+      flex-grow: 1
+      background-color: transparent
+      border: none
+      height: 100%
+      font-size: 1.5rem
+      color: white
+
+    ::placeholder
+      color: rgba(255, 255, 255, 0.8)
+
+    :-ms-input-placeholder
+      color: rgba(255, 255, 255, 0.8)
+
+    ::-ms-input-placeholder
+      color: rgba(255, 255, 255, 0.8)
+
+    div
+      width: 100%
+      position: absolute
+      top: 110%
+      border-radius: 1rem
+      left: 0
+      background-color: rgb(43, 57, 69)
+      z-index: 21
+      font-size: 1.7rem
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-height: 50vh
+      overflow-y: auto
+
+      span
+        padding: 1rem 1.5rem
+        width: 100%
+        color: white
+        cursor: pointer
+
+      span:hover
+        background-color: gray
+
+
+  article
+    position: relative
+    height: 5.5rem
+    background-color: rgb(43, 57, 69)
+    border: none
+    width: 17rem
+    border-radius: 1rem
+    color: white
+    font-size: 1.7rem
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+
+    div
+      cursor: pointer
+
+      background-color: rgb(43, 57, 69)
+      position: absolute
+      top: 105%
+      width: 100%
+      display: flex
+      flex-direction: column
+      align-items: center
+      border-radius: 1rem
+
+      span
+        cursor: pointer
+
+        border-radius: 1rem
+
+        width: 100%
+        text-align: center
+        justify-content: center
+        padding: 0.5rem 1rem
+
+      span:hover
+        background-color: gray
+
+
+
+

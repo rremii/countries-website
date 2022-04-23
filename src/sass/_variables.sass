@@ -1,0 +1,19 @@
+$heigth-mian: (95vh * 0.91)
+$mediaBreak1200px: 1200px
+@mixin media-break($width,$size)
+  @media screen and (#{ $size }-width: $width)
+    @content
+
+//********************COLORS***********************//
+$colors-main: ('main':rgba(255, 255, 255, 0), 'text':#ffffff)
+@function color-main($color)
+  @return map-get($colors-main, $color)
+$colors-nav: ('bg':linear-gradient(to top right, #174A31, #221857), 'linksBG':rgba(0, 0, 0, 0.22), 'links':white, 'linksActiveBG':white, 'linksActive':black, 'crossBG':linear-gradient(269.32deg, #FF36C7 1.45%, #2A7DDE 94.95%, #A355D1 94.95%))
+@function color-nav($color)
+  @return map-get($colors-nav, $color)
+$colors-header: ('bg': rgb(0, 0, 0), 'line':radial-gradient(ellipse at center, #00aeff, rgb(21, 255, 0)), 'logo':white, 'pop_up': rgba(0, 0, 0, 0.15),)
+@function color-header($color)
+  @return map-get($colors-header, $color)
+$colors-AboutPage: ('bg':linear-gradient(to top right, #175479, #AB7934))
+@function color-AboutPage($color)
+  @return map-get($colors-AboutPage, $color)
